@@ -1,0 +1,106 @@
+
+
+<html>
+    <head>
+        <link rel="stylesheet"
+              type="text/css"
+              href="bootstrap.css"
+              />
+        <link rel="stylesheet"
+              type="text/css"
+              href="wdl_stylesheet.css"
+              />
+        <script src="jquery-3.5.1.min.js"></script>
+        <script>
+            $(function(){
+            $("body").fadeIn();
+            $("body").fadeIn("slow");
+            $("body").fadeIn(3000);
+                });
+            
+        </script>
+    </head>
+    <body style="background-image: url('anothercar.jpeg');">
+        <div>
+            <ul>
+                <li id="MyClockDisplay" class="clock" onload="showTime()"></li>
+                <li>PROFILE</li>
+                <li>CONTACT US</li>
+                <li>CARS</li>
+                <li>INTRO</li>
+                <li>HOME</li>
+                <div class="logo"><a style="font-size:1.5vw">RENT CARO</a></div>
+            </ul>
+        </div>
+        &nbsp;
+        <div class="mid">
+            <form method="POST">
+                <label for="fname"><h4>First name:</h4></label>
+                <input type="text" id="fname" name="fname"><br><br>
+                <label for="fname"><h4>Last name:</h4></label>
+                <input type="text" id="lname" name="lname"><br><br>
+                <label for="email"><h4>Email Address:</h4></label>
+                <input type="text" id="email" name="email" onblur="validateEmail(this);"><br><br>
+                <label for="license"><h4>License id:</h4></label>
+                <input type="text" id="license" name="license"><br><br>
+                <label for="address"><h4>Address:</h4></label>
+                <input type="text" id="address" name="address"><br><br>
+                <label for="phone_no"><h4>Phone No.:</h4></label>
+                <input type="text" id="phone_no" name="phone_no"><br><br>
+                <label for="password"><h4>Password:</h4></label>
+                <input type="password" id="password" name="password"><br><br>
+                <label for="Confirm_password"><h4>Confirm Password:</h4></label>
+                <input type="password" id="Confirm_password" name="Confirm_password"><br><br>
+                <input type="submit" value="Submit" onclick="yoman();" class="button">
+            </form>
+            
+        </div>
+        &nbsp;
+        
+    </body>
+    <script type="text/javascript">
+        
+        function yoman(){
+            alert('You have been registred on our website!');
+        };
+        
+        function showTime(){
+    var date = new Date();
+    var h = date.getHours(); // 0 - 23
+    var m = date.getMinutes(); // 0 - 59
+    var s = date.getSeconds(); // 0 - 59
+    var session = "AM";
+    
+    if(h == 0){
+        h = 12;
+    }
+    if(h > 12){
+        h = h - 12;
+        session = "PM";
+    }
+    h = (h < 10) ? "0" + h : h;
+    m = (m < 10) ? "0" + m : m;
+    s = (s < 10) ? "0" + s : s;
+    var time = h + ":" + m + ":" + s + " " + session;
+    document.getElementById("MyClockDisplay").innerText = time;
+    document.getElementById("MyClockDisplay").textContent = time;
+    setTimeout(showTime, 1000);  
+}
+showTime();
+
+function validateEmail(emailField){
+        var reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+
+        if (reg.test(emailField.value) == false) 
+        {
+            alert('Invalid Email Address');
+            return false;
+        }
+
+        return true;
+
+}
+    </script>
+</html>
+
+
