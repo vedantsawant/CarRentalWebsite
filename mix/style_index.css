@@ -1,0 +1,151 @@
+body{
+  font:15px/1.5 Arial, Helvetica, sans-serif;
+  padding: 0;
+  margin: 0;
+  /*background: linear-gradient(rgba(26, 26, 26, 0.5), rgba(26, 26, 26, 0.5)), url("../img/bg.jpg");*/
+  background: url("../img/bg.jpg");
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+
+}
+
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.bg-image {
+  /* The image used */
+  background-image: url("cars1.jpg");
+  
+  /* Add the blur effect */
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+  
+  /* Full height */
+  height: 100%; 
+  
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Position text in the middle of the page/image */
+.bg-text {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  border: 1px solid #f1f1f1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+}
+
+
+
+/* ----------------------------------------------------------------*/
+.high{
+  font: bold 20px Arial;
+  background-color: #99b3ff;
+  padding: 10px;
+  margin-right: 10px;
+  margin-left: 10px;
+
+}
+.container{
+  width: 80%;
+  margin: auto;
+}
+ul{
+  margin: 0;
+  padding: 0;
+}
+
+header{
+  color: #ffffff;
+  padding-top: 30px;
+  min-height: 70px;
+}
+header a{
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+header li{
+  float: left;
+  display: inline;
+  padding: 0px 20px 0px 20px;
+  margin-left: 10px;
+}
+header #branding{
+  float: left;
+
+}
+header #branding h1{
+  margin: 0;
+}
+header nav{
+  float: right;
+  margin-top: 10px;
+}
+header .highlight{
+  color: #99b3ff;
+  font-weight: bold;
+}
+header a:hover{
+  color: #99b3ff;
+  font-weight:bold;
+}
+
+
+
+footer{
+  padding: 20px;
+  margin-top: 100px;
+  color: #ffffff;
+  background-color: black;
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*--------------------------------------------------*/
