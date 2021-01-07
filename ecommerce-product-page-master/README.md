@@ -1,1 +1,0 @@
-Created a ecommerce product page with HTML and CSS.
