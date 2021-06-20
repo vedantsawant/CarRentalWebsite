@@ -1,3 +1,2 @@
 # Rent CARo
-A Car Rental website
-## buy cars from us
+A Car Rental website built usinf Bootstrap, jQuery, and PHP
