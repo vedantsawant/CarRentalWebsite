@@ -1,2 +1,2 @@
 # Rent CARo
-A Car Rental website built usinf Bootstrap, jQuery, and PHP
+A Car Rental website built using Bootstrap, jQuery, AJAX and PHP
